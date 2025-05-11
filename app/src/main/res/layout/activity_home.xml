@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="0dp">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Ensure this LinearLayout has the correct width -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- User Greeting Section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+
+                android:layout_marginStart="0dp"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/outline_box"
+                android:padding="1dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="9dp"
+                    app:srcCompat="@drawable/img" />
+
+                <ImageButton
+                    android:id="@+id/profile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="12dp"
+
+                    android:src="@drawable/profile"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@color/black"
+
+                    android:scaleType="centerCrop" />
+
+
+                <TextView
+                    android:id="@+id/stayFitText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Moodify"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <!-- Greeting Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical">
+
+
+                <LinearLayout
+                    android:layout_width="308dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingEnd="8dp">
+
+                    <TextView
+                        android:id="@+id/greetingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   Hello "
+                        android:textColor="#1E88E5"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="312dp"
+                        android:layout_height="57dp"
+                        android:layout_marginBottom="0dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <!-- Start Workout Button -->
+
+            <!-- Diet Plan Button -->
+            <Button
+                android:id="@+id/check_button"
+                android:layout_width="match_parent"
+
+
+                android:layout_height="80dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="30dp"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/rounded_button"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:backgroundTint="@color/white"
+                android:text="Let's Check Your Mood"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:padding="10dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/Happy_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+
+                    android:layout_margin="8dp"
+                    android:background="@drawable/review"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:text="Happy 😊"/>
+
+                <Button
+                    android:id="@+id/Sad_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/review"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:text="Sad 😔"/>
+
+                <Button
+                    android:id="@+id/Angry_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/review"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:text="Angry 😡"/>
+
+                <Button
+                    android:id="@+id/Neutral_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/review"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:text="Neutral 😐"/>
+                <Button
+                    android:id="@+id/Confused_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/review"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:text="Confused 🤔"/>
+
+                <Button
+                    android:id="@+id/Sleepy_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/review"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:text="Sleepy 😴"/>
+
+
+
+            </GridLayout>
+
+            <Button
+                android:id="@+id/Surprised_button"
+                android:layout_width="match_parent"
+
+                android:layout_height="102dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/review"
+                android:text="Surprised 😲"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="0dp">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:scaleType="centerInside"
+            android:src="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/events"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:scaleType="centerInside"
+            android:src="@drawable/happy" />
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:scaleType="centerInside"
+            android:src="@drawable/setting" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
